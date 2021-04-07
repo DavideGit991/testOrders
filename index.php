@@ -76,7 +76,7 @@
                              this.sort=true;
                              $.ajax(
                              {
-                                 'url': 'http://localhost/test/api/order/getAsc.php',
+                                 'url': 'http://localhost/testOrders/api/order/getAsc.php',
                                  'method': 'GET',
                                  'success': (res)=>{
                                      this.orders=res.data;
@@ -92,7 +92,7 @@
                             this.sort=true;
                              $.ajax(
                                  {
-                                     'url': 'http://localhost/test/api/order/getDesc.php',
+                                     'url': 'http://localhost/testOrders/api/order/getDesc.php',
                                      'method': 'GET',
                                      'success': (res)=>{
                                          this.orders=res.data;
@@ -110,7 +110,7 @@
             mounted() {
                 $.ajax(
                 {
-                    'url': 'http://localhost/test/api/order/getDesc.php',
+                    'url': 'http://localhost/testOrders/api/order/getDesc.php',
                     'method': 'GET',
                     'success': (res)=>{
                         this.orders=res.data;

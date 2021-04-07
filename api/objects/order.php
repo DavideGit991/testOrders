@@ -47,7 +47,7 @@ class Order{
         $stmt->execute();
       
         return $stmt;
-        }
+    }
 
 }
 ?>
